@@ -28,8 +28,8 @@ const config: PlaywrightTestConfig = {
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  /* Reporter to use. See https://playwright.dev/docs/test-reporters - Currently Using Allure Reportinh */
+  reporter: 'experimental-allure-playwright',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
@@ -46,7 +46,9 @@ const config: PlaywrightTestConfig = {
     {
       name: 'chromium',
       use: {
+        headless: false,
         ...devices['Desktop Chrome'],
+        
       },
     },
 

@@ -1,0 +1,40 @@
+{
+  "chromium demoqa.spec.ts Assertion" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b532d1e19a8b75e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651660985895,
+        "stop" : 1651661000344,
+        "duration" : 14449
+      }
+    } ]
+  },
+  "chromium demoqa.spec.ts FrameTest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "888d7d263b76d228",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651660985934,
+        "stop" : 1651661002656,
+        "duration" : 16722
+      }
+    } ]
+  }
+}
