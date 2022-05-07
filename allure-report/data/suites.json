@@ -1,47 +1,5 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "name" : "suites",
-  "children" : [ {
-    "name" : "chromium",
-    "children" : [ {
-      "name" : "demoqa.spec.ts",
-      "children" : [ {
-        "name" : "Assertion",
-        "uid" : "b532d1e19a8b75e4",
-        "parentUid" : "71e4e3993ff8301ae369e3880edbcdb1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651660985895,
-          "stop" : 1651661000344,
-          "duration" : 14449
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "FrameTest",
-        "uid" : "888d7d263b76d228",
-        "parentUid" : "71e4e3993ff8301ae369e3880edbcdb1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651660985934,
-          "stop" : 1651661002656,
-          "duration" : 16722
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "71e4e3993ff8301ae369e3880edbcdb1"
-    } ],
-    "uid" : "36c900977e1d8b81a2c6893cc82bfc01"
-  } ]
+  "children" : [ ],
+  "name" : "suites"
 }

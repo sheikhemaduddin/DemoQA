@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed May 04 15:43:05 PKT 2022","Wed May 04 15:43:20 PKT 2022","14449","chromium","demoqa.spec.ts","","","","Assertion",""
-"passed","Wed May 04 15:43:05 PKT 2022","Wed May 04 15:43:22 PKT 2022","16722","chromium","demoqa.spec.ts","","","","FrameTest",""

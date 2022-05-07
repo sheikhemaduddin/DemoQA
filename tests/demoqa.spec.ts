@@ -3,7 +3,6 @@ import { test, expect } from '@playwright/test';
 test.beforeEach(async ({ page, context }) => {
     await context.tracing.start({snapshots : true, screenshots: true});
     await page.goto('https://demoqa.com');
-    viewport: null;
   });
 
 test.afterEach(async({page, context}) => {
@@ -19,8 +18,8 @@ test('Assertion', async ({ page, context }) => {
 });
 
 test('FrameTest', async({page, context}) => {
-    await page.mouse.down();
-    await page.locator("div:nth-child(3) div:nth-child(1) div:nth-child(3) h5:nth-child(1)").click();
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await page.locator('text=Alerts, Frame & Windows').click();
     await page.locator("//div[@class='element-list collapse show'] //li[@id='item-2']").click(); 
     const HeadingText = await page.frameLocator('#frame1').locator("#sampleHeading");
     await expect(HeadingText).toContainText('This is a sample page');
@@ -29,15 +28,37 @@ test('FrameTest', async({page, context}) => {
   });
 
   test('Window Handling', async({page, context})=> {
-    await page.mouse.down();
-    await page.locator("div:nth-child(3) div:nth-child(1) div:nth-child(3) h5:nth-child(1)").click();
-    await page.locator('"Browser Windows"').click();
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await page.locator('text=Alerts, Frame & Windows').click();
+    await page.locator("div[class='element-list collapse show'] li[id='item-0'] span[class='text']").click();
     const [newPage] = await Promise.all([
           context.waitForEvent("page"),
           await page.click("#tabButton")
       ])
     await newPage.waitForLoadState();
     expect(newPage.url()).toContain("sample");
-    const WindowMsg =  newPage.locator('#sampleHeading'); 
-    await expect(WindowMsg).toContainText('sample');  
+    const TabMsg =  newPage.locator('#sampleHeading'); 
+    await expect(TabMsg).toContainText('sample');  
+
+    await page.bringToFront();
+    const Heading = page.locator(".main-header");
+    await expect(Heading).toContainText("Browser Windows");
+
+    const [windowPage] = await Promise.all([
+        context.waitForEvent("page"),
+        await page.click("#windowButton")
+    ])
+
+    await windowPage.waitForLoadState();
+    expect(windowPage.url()).toContain("sample");
+    const WindowMsg =  windowPage.locator('#sampleHeading'); 
+    await expect(WindowMsg).toContainText('sample'); 
+    await windowPage.close();
+    
+    const [windowMsgPage] = await Promise.all([
+        context.waitForEvent("page"),
+        await page.click("#messageWindowButton")
+    ])
+
+    await windowPage.waitForLoadState();
   });
