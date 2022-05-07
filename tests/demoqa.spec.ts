@@ -20,7 +20,8 @@ test('Assertion', async ({ page, context }) => {
 test('FrameTest', async({page, context}) => {
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await page.locator('text=Alerts, Frame & Windows').click();
-    await page.locator("//div[@class='element-list collapse show'] //li[@id='item-2']").click(); 
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await page.locator('div[class="element-list collapse show"] li[id="item-2"] span[class="text"]').click(); 
     const HeadingText = await page.frameLocator('#frame1').locator("#sampleHeading");
     await expect(HeadingText).toContainText('This is a sample page');
     const HeadingText2 = await page.frameLocator('#frame2').locator("#sampleHeading");

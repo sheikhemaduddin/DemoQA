@@ -1,0 +1,47 @@
+{
+  "uid" : "2ae7b2646e8cdbce",
+  "name" : "Window Handling",
+  "fullName" : "Window Handling",
+  "historyId" : "chromium demoqa.spec.ts Window Handling",
+  "time" : {
+    "start" : 1651948063699,
+    "stop" : 1651948094442,
+    "duration" : 30743
+  },
+  "status" : "broken",
+  "statusMessage" : "Timeout of 30000ms exceeded.",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "demoqa.spec.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ae7b2646e8cdbce.json",
+  "parameterValues" : [ ]
+}

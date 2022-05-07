@@ -1,1 +1,60 @@
-{ }
+{
+  "chromium demoqa.spec.ts Window Handling" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "543bb51e2ed0ce3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651952388366,
+        "stop" : 1651952396162,
+        "duration" : 7796
+      }
+    } ]
+  },
+  "chromium demoqa.spec.ts Assertion" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "edc0223edcb2f1b2",
+      "status" : "failed",
+      "statusDetails" : "expect(received).toContainText(expected)\n\nExpected string: \"Link has responded with staus 401\"\nReceived string: \"\"\nCall log:\n  - expect.toContainText with timeout 5000ms\n  - waiting for selector \"#linkResponses\"\n",
+      "time" : {
+        "start" : 1651952167832,
+        "stop" : 1651952184311,
+        "duration" : 16479
+      }
+    } ]
+  },
+  "chromium demoqa.spec.ts FrameTest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "499890fea3f92ded",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651951073487,
+        "stop" : 1651951082415,
+        "duration" : 8928
+      }
+    } ]
+  }
+}

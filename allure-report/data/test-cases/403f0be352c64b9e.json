@@ -1,0 +1,48 @@
+{
+  "uid" : "403f0be352c64b9e",
+  "name" : "FrameTest",
+  "fullName" : "FrameTest",
+  "historyId" : "chromium demoqa.spec.ts FrameTest",
+  "time" : {
+    "start" : 1651950175051,
+    "stop" : 1651950183048,
+    "duration" : 7997
+  },
+  "status" : "failed",
+  "statusMessage" : "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://demoqa.com/browser-windows\", waiting until \"load\"\n============================================================",
+  "statusTrace" : "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://demoqa.com/browser-windows\", waiting until \"load\"\n============================================================\n    at d:\\AutomationProjects\\PlaywrightSeries\\DemoQA\\tests\\demoqa.spec.ts:5:16",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "demoqa.spec.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "403f0be352c64b9e.json",
+  "parameterValues" : [ ]
+}

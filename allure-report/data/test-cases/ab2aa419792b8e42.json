@@ -1,0 +1,48 @@
+{
+  "uid" : "ab2aa419792b8e42",
+  "name" : "Window Handling",
+  "fullName" : "Window Handling",
+  "historyId" : "chromium demoqa.spec.ts Window Handling",
+  "time" : {
+    "start" : 1651946795298,
+    "stop" : 1651946808270,
+    "duration" : 12972
+  },
+  "status" : "failed",
+  "statusMessage" : "expect(received).toContainText(expected)\n\nExpected string: \"samples\"\nReceived string: \"This is a sample page\"\nCall log:\n  - expect.toContainText with timeout 5000ms\n  - waiting for selector \"#sampleHeading\"\n  -   selector resolved to <h1 id=\"sampleHeading\">This is a sample page</h1>\n  -   unexpected value \"This is a sample page\"\n  -   selector resolved to <h1 id=\"sampleHeading\">This is a sample page</h1>\n  -   unexpected value \"This is a sample page\"\n  -   selector resolved to <h1 id=\"sampleHeading\">This is a sample page</h1>\n  -   unexpected value \"This is a sample page\"\n  -   selector resolved to <h1 id=\"sampleHeading\">This is a sample page</h1>\n  -   unexpected value \"This is a sample page\"\n  -   selector resolved to <h1 id=\"sampleHeading\">This is a sample page</h1>\n  -   unexpected value \"This is a sample page\"\n  -   selector resolved to <h1 id=\"sampleHeading\">This is a sample page</h1>\n  -   unexpected value \"This is a sample page\"\n  -   selector resolved to <h1 id=\"sampleHeading\">This is a sample page</h1>\n  -   unexpected value \"This is a sample page\"\n  -   selector resolved to <h1 id=\"sampleHeading\">This is a sample page</h1>\n  -   unexpected value \"This is a sample page\"\n",
+  "statusTrace" : "\n    at d:\\AutomationProjects\\PlaywrightSeries\\DemoQA\\tests\\demoqa.spec.ts:54:29",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "demoqa.spec.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ab2aa419792b8e42.json",
+  "parameterValues" : [ ]
+}

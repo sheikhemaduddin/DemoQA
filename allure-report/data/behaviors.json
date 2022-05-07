@@ -1,5 +1,56 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "children" : [ ],
-  "name" : "behaviors"
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "FrameTest",
+    "uid" : "499890fea3f92ded",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651951073487,
+      "stop" : 1651951082415,
+      "duration" : 8928
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 13,
+    "retriesStatusChange" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "Assertion",
+    "uid" : "edc0223edcb2f1b2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1651952167832,
+      "stop" : 1651952184311,
+      "duration" : 16479
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 6,
+    "retriesStatusChange" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "Window Handling",
+    "uid" : "543bb51e2ed0ce3d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651952388366,
+      "stop" : 1651952396162,
+      "duration" : 7796
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 22,
+    "retriesStatusChange" : true,
+    "parameters" : [ ]
+  } ]
 }

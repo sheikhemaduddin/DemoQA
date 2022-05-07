@@ -1,0 +1,46 @@
+{
+  "uid" : "1aabe12ffd6fbde3",
+  "name" : "FrameTest",
+  "fullName" : "FrameTest",
+  "historyId" : "chromium demoqa.spec.ts FrameTest",
+  "time" : {
+    "start" : 1651950715444,
+    "stop" : 1651950725063,
+    "duration" : 9619
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "demoqa.spec.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1aabe12ffd6fbde3.json",
+  "parameterValues" : [ ]
+}

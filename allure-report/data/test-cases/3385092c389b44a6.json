@@ -1,0 +1,46 @@
+{
+  "uid" : "3385092c389b44a6",
+  "name" : "Assertion",
+  "fullName" : "Assertion",
+  "historyId" : "chromium demoqa.spec.ts Assertion",
+  "time" : {
+    "start" : 1651948479831,
+    "stop" : 1651948489721,
+    "duration" : 9890
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "demoqa.spec.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3385092c389b44a6.json",
+  "parameterValues" : [ ]
+}

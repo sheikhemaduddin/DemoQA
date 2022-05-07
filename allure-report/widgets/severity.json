@@ -1,1 +1,31 @@
-[ ]
+[ {
+  "uid" : "499890fea3f92ded",
+  "name" : "FrameTest",
+  "time" : {
+    "start" : 1651951073487,
+    "stop" : 1651951082415,
+    "duration" : 8928
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "edc0223edcb2f1b2",
+  "name" : "Assertion",
+  "time" : {
+    "start" : 1651952167832,
+    "stop" : 1651952184311,
+    "duration" : 16479
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "543bb51e2ed0ce3d",
+  "name" : "Window Handling",
+  "time" : {
+    "start" : 1651952388366,
+    "stop" : 1651952396162,
+    "duration" : 7796
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
