@@ -79,17 +79,24 @@ test('FrameTest', async({page, context}) => {
      
   });
 
-  test('Handling Dialog', async ({ page }) => {
+  test('Dialogs', async ({ page }) => {
+    // Click text=Alerts, Frame & Windows
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-    await page.locator('text=Alerts, Frame & Windows').click();
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-    await page.locator('div[class="element-list collapse show"] li[id="item-4"] span[class="text"]').click(); 
-    await page.locator('#showSmallModal').click();
-    const DialogMsg = await page.locator('modal-body');
-    await expect(page.locator('text=Small Modal')).toBeVisible();
-    await expect(DialogMsg).toContainText('This is a small modal.');
-  });
+    await page.locator('text=Alerts, Frame & Windows').click(); 
+    // Click li:has-text("Modal Dialogs")
+    await page.locator('li:has-text("Modal Dialogs")').click();
+    // Click text=Small modal
+    await page.locator('text=Small modal').click(); 
 
+    await page.locator('#closeSmallModal').click();
+    await page.waitForTimeout(3000);
+    await page.locator('text=Small modal').click();
   
+    const SmallModalID = page.locator('#example-modal-sizes-title-sm');
+    await expect(SmallModalID).toContainText('Small Modal');
+    await page.locator('#closeSmallModal').click();
+    await page.waitForTimeout(3000);
+  
+  });
  
 
